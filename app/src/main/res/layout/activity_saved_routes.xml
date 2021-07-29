@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="customer.gajamove.com.gajamove_customer.SavedRoutes">
+
+    <include layout="@layout/toolbar"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/saved_location_list"
+        android:layout_marginTop="10dp"
+        />
+
+    <include android:id="@+id/empty_lay" android:visibility="gone" layout="@layout/no_data_found_lay"/>
+
+</LinearLayout>

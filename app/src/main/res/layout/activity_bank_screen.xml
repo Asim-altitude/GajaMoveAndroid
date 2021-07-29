@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/header_lay"
+        >
+
+        <include layout="@layout/toolbar"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/empty_message"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_bank"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black_color"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bank_list"
+            >
+
+        </ListView>
+        <Button
+            android:fontFamily="@font/body_one"
+            android:id="@+id/add_bank_button"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/next_btn_drawable"
+            android:text="@string/add_bank"
+            android:textSize="16dp"
+            android:textColor="@color/white_color"
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:fontFamily="@font/body_one"
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/next_btn_drawable"
+        android:text="Next"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:textColor="@color/white_color"
+        />
+
+</RelativeLayout>

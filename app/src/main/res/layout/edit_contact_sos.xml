@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_rect_filled"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:text="Edit Email"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_color"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_gray_color"
+                        android:visibility="gone"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <EditText
+                            android:id="@+id/name_box"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/light_gray"
+                            android:hint="Name"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="10"
+                            android:minLines="2"
+                            android:padding="10dp"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:background="@drawable/back_light_btn"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/email_box"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/light_gray"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="10"
+                            android:minLines="2"
+                            android:padding="10dp"
+                            android:textColor="@color/black_color"
+                            android:textColorHint="@color/black_color"
+                            android:background="@drawable/back_light_btn"
+                            android:textSize="14sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/dark_gray_color"
+                            android:visibility="gone"
+                            />
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email already added"
+                            android:textColor="@color/reddish"
+                            android:padding="5dp"
+                            android:textSize="15dp"
+                            android:id="@+id/error_text"
+                            android:visibility="gone"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/container"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <Button
+
+                            android:id="@+id/ok_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/next_btn_drawable"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:text="UPDATE"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white_color"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/cancel_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:clickable="true"
+                android:elevation="5dp"
+                app:srcCompat="@drawable/cross" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customer.gajamove.com.gajamove_customer.AppVersionScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/app_icon"
+            />
+        <TextView
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GajaMove"
+            android:textSize="24dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textColor="@color/black_color"
+            />
+        <TextView
+            android:id="@+id/version_txt"
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version 1.0"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/dark_gray_color"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

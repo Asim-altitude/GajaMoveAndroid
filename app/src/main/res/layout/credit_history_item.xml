@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_rect_filled"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Reference #"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_color"
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="0011"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_color"
+                android:id="@+id/pay_id"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="RM00"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:id="@+id/transaction_amount_paid"
+                />
+
+
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="..."
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/dark_gray_color"
+                android:id="@+id/transaction_date"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/body_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="...."
+            android:layout_margin="5dp"
+            android:textColor="@color/dark_gray_color"
+            android:id="@+id/desc"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

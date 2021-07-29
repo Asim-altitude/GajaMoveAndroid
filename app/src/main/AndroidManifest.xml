@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="customer.gajamove.com.gajamove_customer">
+    <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <application
+        android:name=".MyApp"
+        android:allowBackup="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AppVersionScreen"></activity>
+        <activity
+            android:name=".auth.ChooseIndustryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FavouriteDriverScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SavedRoutes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bank.BankScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bank.AddBankInfoScreen"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TopUpScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeLanguage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinanceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderHistoryScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrentJobScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.CaptureFaceScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".estimate.Estimate_VehicleScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".estimate.Create_Estimate_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.LoginScreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SettingsScreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile_Screen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.ForgotPassword"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.SignUp_Screen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".auth.VerificationScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".auth.CreatePassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".HomeScreen" />
+        <activity
+            android:name=".Create_Order_Screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SelectVehicleScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PickLocationScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReviewOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindDriverScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GajaRideScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderHistoryDetailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sos.SoS_Call_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sos.SOS_Setting_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.ThankYouScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.ChatActivity"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDHMVQCO0KvLss_GvZYL8impb-3SLkj75Q" />
+        <!--
+<receiver
+            android:name=".notifications.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                &lt;!&ndash; Receives the actual messages. &ndash;&gt;
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.google.android.gcm.demo.app" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver
+            android:name=".notifications.SmsReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".notifications.FcmInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notifications.FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

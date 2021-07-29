@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white_color"
+        tools:context="customer.gajamove.com.gajamove_customer.SelectVehicleScreen">
+
+        <include layout="@layout/toolbar"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_recycler_list"
+            android:layout_marginTop="20dp"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray_color"
+            android:layout_margin="20dp"
+            android:textSize="14dp"
+            android:text="@string/ideal_for"
+            />
+
+        <TextView
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray_color"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="12dp"
+            android:text="@string/additional_service"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/additional_service_list"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="170dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            ></ListView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:elevation="5dp"
+        android:background="@drawable/top_corner_rounded_rect"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/starting_price_lay"
+            android:visibility="gone"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/secondary_black"
+                android:text="Starting Price"
+
+                />
+
+            <TextView
+                android:fontFamily="@font/heading_one"
+                android:id="@+id/starting_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:text="RM0"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/secondary_black"
+                android:text="Over Mileage"
+
+                />
+
+            <TextView
+                android:fontFamily="@font/heading_one"
+                android:id="@+id/outstation_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:text="RM0"
+
+                />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/total_price_lay"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_up"
+                    android:padding="5dp"
+
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:fontFamily="@font/body_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Base Price"
+                    android:textColor="@color/black_color"
+                    android:textSize="12dp"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/body_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM0.0"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    android:id="@+id/base_price"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/services_prices_list"
+                android:visibility="gone"
+                android:divider="@null"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/total_km_lay"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                >
+
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/secondary_black"
+                    android:text="@string/total_km"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/heading_one"
+                        android:id="@+id/extra_km_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textColor="@color/black_color"
+                        android:text="0KM"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/secondary_black"
+                    android:text="@string/total"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    >
+
+                    <TextView
+                        android:fontFamily="@font/heading_one"
+                        android:id="@+id/vehicle_price_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textColor="@color/black_color"
+                        android:text="RM0"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:fontFamily="@font/body_two"
+            android:id="@+id/confirm_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/next_btn_drawable"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="5dp"
+            android:text="@string/next"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

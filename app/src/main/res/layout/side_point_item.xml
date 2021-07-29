@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/middle"
+        android:visibility="visible"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="2dp"
+            android:src="@drawable/ellipse"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_red"
+        android:layout_centerInParent="true"
+        android:background="@drawable/white_rect_filled"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/top"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            >
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/circle_red"
+            android:layout_centerInParent="true"
+            android:background="@drawable/white_rect_filled"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/end"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_height="2dp"
+                android:src="@drawable/ellipse"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map_pin"
+            android:layout_centerInParent="true"
+            android:background="@drawable/white_rect_filled"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

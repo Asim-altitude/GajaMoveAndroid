@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rect_filled"
+        android:layout_margin="15dp"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/current_job_lay"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:id="@+id/proceed_lay"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:id="@+id/service_name"
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Motorcycle"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today, Feb 22, ASAP"
+                    android:textColor="@color/dark_gray_color"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/view_driver_btn"
+
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/arrow_fwd"
+                    android:padding="10dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/driver_lay"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/profile_icon"
+                    android:id="@+id/driver_image"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/driver_name"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textColor="@color/black_color"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/vehicle_plate"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="qwqdwq"
+                        android:textColor="@color/black_color"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Cancel Job"
+                android:textColor="@color/theme_primary"
+                android:layout_margin="5dp"
+                android:id="@+id/cancel_job"
+                android:textSize="14dp"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="3dp"
+                android:visibility="gone"
+                >
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/side_point_list"
+                    android:visibility="visible"
+                    android:divider="@null"
+                    />
+           <!--     <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/circle_red"
+                    />
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+
+                <ImageView
+                    android:layout_width="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="2dp"
+                    android:src="@drawable/ellipse"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/map_pin"
+                    />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/pickup_header_text"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salak Satan"
+                        android:textColor="@color/black_color"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:id="@+id/pickup_location_txt"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salak Satan, Salak South, Kuala Lampur"
+                        android:textColor="@color/dark_gray_color"
+                        android:textSize="12dp"
+                        android:minLines="2"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/destination_header_text"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salak Satan"
+                        android:textColor="@color/black_color"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:id="@+id/destination_location_txt"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salak Satan, Salak South, Kuala LampurSalak Satan, Salak South, Kuala Lampur"
+                        android:textColor="@color/dark_gray_color"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        android:minLines="2"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stop_list"
+                    tools:listitem="@layout/stop_info_lay"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:divider="@null"
+                    android:dividerHeight="5dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:visibility="gone"
+            android:id="@+id/additionalservices_lay"
+            >
+            <TextView
+                android:fontFamily="@font/body_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Additionl Services"
+                android:textColor="@color/dark_gray_color"
+                android:textSize="12dp"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/services_list_view"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:dividerHeight="2dp"
+                android:focusable="false"
+                android:clickable="false"
+                tools:listitem="@layout/additional_service_item"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_km_lay"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/secondary_black"
+                    android:text="Total KM"
+
+                    />
+
+                <TextView
+                    android:fontFamily="@font/heading_one"
+                    android:id="@+id/extra_km_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/black_color"
+                    android:text="0KM"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_price_lay"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="12dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/secondary_black"
+                    android:text="Grand Total"
+
+                    />
+
+                <TextView
+                    android:fontFamily="@font/heading_one"
+                    android:id="@+id/total_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/black_color"
+                    android:text="RM0"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/drop_down_lay"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_details"
+                    android:textSize="14dp"
+                    android:textColor="@color/black_color"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrow_down"
+                    android:rotation="-90"
+
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

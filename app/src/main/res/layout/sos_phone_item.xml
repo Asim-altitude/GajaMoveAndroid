@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/sos_item_icon_bg"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                 app:srcCompat="@drawable/contact"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:tint="@color/black_color"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_call_black_24dp"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_color"
+                >
+
+                <TextView
+                    android:id="@+id/sos_person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="11dp"
+                    android:paddingLeft="10dp"
+                    android:text="John Doe"
+                    android:textColor="@color/black_color"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_options"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/cross"
+                        android:scaleType="fitXY"
+                        android:padding="5dp"
+                        android:id="@+id/delete_contact_btn"
+                        />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/edit_contact_btn"
+                    />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+92303672128"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_color"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/sos_person_number"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

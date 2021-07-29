@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customer.gajamove.com.gajamove_customer.FindDriverScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_content"
+        ></FrameLayout>
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow_left"
+        android:layout_margin="20dp"
+        android:id="@+id/back_btn"
+        />
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rippleBg"
+        android:layout_centerInParent="true"
+        app:rb_color="@color/theme_primary"
+        app:rb_radius="30dp"
+        app:rb_rippleAmount="3"
+        app:rb_duration="3000"
+        app:rb_scale="6"
+        ></com.skyfishjy.library.RippleBackground>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:elevation="5dp"
+        android:background="@drawable/top_corner_rounded_rect"
+        >
+
+        <TextView
+            android:id="@+id/service_name"
+            android:visibility="visible"
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:textSize="18dp"
+            android:text="@string/finding_courier"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:visibility="visible"
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_gray_color"
+            android:textSize="14dp"
+            android:text="@string/courier_message"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+
+            android:gravity="center_horizontal"
+            />
+
+
+        <Button
+            android:fontFamily="@font/body_one"
+            android:id="@+id/cancel_order_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/grey_rect_empty"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/light_gray_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:elevation="5dp"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

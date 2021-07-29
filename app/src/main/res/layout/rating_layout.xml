@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_corner_rounded_rect"
+
+        >
+
+        <ImageView
+            android:id="@+id/close_rating_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/cross"
+            android:layout_gravity="right"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/home"
+            android:id="@+id/rating_user_image"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14dp"
+                android:textColor="@color/black_color"
+                android:id="@+id/rating_user_name"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/e_receipt_lay"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                >
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:fontFamily="@font/heading_one"
+                    android:text="Add to Favourite Driver List"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_marginTop="17dp"
+                android:background="@color/theme_primary"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_height="1dp"/>
+
+
+        </LinearLayout>
+        <Switch
+            android:id="@+id/fav_switch"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:buttonTint="@color/theme_primary"
+            android:checked="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"
+
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:id="@+id/rating_bar"
+        android:layout_margin="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/grey_rect_empty"
+        >
+        <EditText
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:background="@null"
+            android:id="@+id/rating_text"
+            android:gravity="start"
+            android:hint="Write a Review (optional)"
+            android:padding="5dp"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:fontFamily="@font/body_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/next_btn_drawable"
+        android:text="Rate"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:id="@+id/rate_btn"
+
+        />
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

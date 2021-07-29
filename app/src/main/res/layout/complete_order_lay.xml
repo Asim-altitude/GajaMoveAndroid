@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/order_list_view"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        tools:listitem="@layout/order_item"
+        />
+
+    <include android:id="@+id/no_data_lay" android:visibility="gone" layout="@layout/no_data_found_lay"/>
+
+
+</RelativeLayout>

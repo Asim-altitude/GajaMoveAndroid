@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "979306676240",
+    "firebase_url": "https://gajamove-1619404483876-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "gajamove-1619404483876",
+    "storage_bucket": "gajamove-1619404483876.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979306676240:android:277316b692c722ed8bca95",
+        "android_client_info": {
+          "package_name": "com.gajamove.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979306676240-6dib65378ifm0feak8g4eiof6a70tn9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg4EKbIOrH4ROfCa8W1aUiQvmUOhSbC_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979306676240-6dib65378ifm0feak8g4eiof6a70tn9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979306676240:android:65b612ca5beba64e8bca95",
+        "android_client_info": {
+          "package_name": "com.gajamove.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979306676240-6dib65378ifm0feak8g4eiof6a70tn9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg4EKbIOrH4ROfCa8W1aUiQvmUOhSbC_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979306676240-6dib65378ifm0feak8g4eiof6a70tn9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

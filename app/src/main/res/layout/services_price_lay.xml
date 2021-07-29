@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:fontFamily="@font/body_one"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@color/secondary_black"
+            android:text="Starting Price"
+            android:id="@+id/service_name"
+            />
+
+        <TextView
+            android:fontFamily="@font/heading_one"
+            android:id="@+id/service_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/black_color"
+            android:text="RM0"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

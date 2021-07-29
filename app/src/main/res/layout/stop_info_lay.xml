@@ -1,0 +1,208 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/top"
+                android:visibility="visible"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    >
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/circle_red"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/white_rect_filled"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/end"
+                android:visibility="visible"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/map_pin"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/white_rect_filled"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/pickup_header_text"
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salak Satan"
+                android:textSize="14dp"
+                android:autoSizeMinTextSize="8sp"
+                android:textColor="@color/black_color"
+                android:autoSizeTextType="uniform"
+                />
+            <TextView
+                android:id="@+id/pickup_location_name"
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salak Satan, Salak South, Kuala Lampur"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"
+                android:autoSizeMinTextSize="8sp"
+                android:textColor="@color/dark_gray_color"
+                android:maxLines="2"
+                android:minLines="2"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

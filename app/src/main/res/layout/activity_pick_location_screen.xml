@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    tools:context="customer.gajamove.com.gajamove_customer.PickLocationScreen">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:background="@color/white_color"
+        >
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cross"
+            android:padding="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:visibility="visible"
+            android:fontFamily="@font/body_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black_color"
+            android:textSize="16dp"
+            android:text="@string/choose_location"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/search"
+            />
+        <EditText
+            android:id="@+id/search_text_field"
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/search_location"
+            android:background="@null"
+            android:text=""
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/map_pin"
+            />
+        <TextView
+            android:fontFamily="@font/body_one"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/theme_primary"
+            android:text="Select Location from map"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/note"
+        android:visibility="visible"
+        android:fontFamily="@font/body_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_primary"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:text="@string/note"
+        android:layout_margin="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saved_location_list"
+        android:layout_marginTop="10dp"
+        ></ListView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/location_list"
+        android:layout_marginTop="10dp"
+        ></ListView>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

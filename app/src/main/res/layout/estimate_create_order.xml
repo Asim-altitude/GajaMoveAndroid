@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customer.gajamove.com.gajamove_customer.Create_Order_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_lay"
+        >
+
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cross"
+        android:layout_margin="20dp"
+        android:id="@+id/cross_btn"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="@color/white_color"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_bar"
+            android:visibility="gone"
+
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/home_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="1"
+                    android:background="@color/white_color"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:padding="5dp"
+                        android:src="@drawable/home"
+                        android:tint="@color/dark_gray_color" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/body_one"
+                        android:gravity="center"
+                        android:text="@string/home"
+                        android:textColor="@color/dark_gray_color"
+                        android:textSize="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white_color"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/history_tab"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/history"
+                        android:padding="5dp"
+                        />
+                    <TextView
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/History"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:textColor="@color/dark_gray_color"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white_color"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/account_tab"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/profile"
+                        android:padding="5dp"
+                        android:tint="@color/dark_gray_color"
+                        />
+                    <TextView
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Account"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:textColor="@color/dark_gray_color"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white_color"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/logout_tab"
+                    android:visibility="visible"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:src="@drawable/wallet"
+                        android:padding="10dp"
+                        android:tint="@color/dark_gray_color"
+                        />
+                    <TextView
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finance"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:textColor="@color/dark_gray_color"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/basic_lay"
+        android:visibility="visible"
+         android:background="@drawable/top_corner_rounded_rect"
+        >
+
+        <TextView
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black_color"
+            android:textSize="25dp"
+            android:text="@string/where_to"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:id="@+id/pick_time_lay"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calendar"
+                />
+
+            <TextView
+                android:id="@+id/selected_date"
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/secondary_black"
+                android:textSize="14dp"
+                android:text="Choose date"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_down"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/grey_rect_empty"
+            >
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/basic_side_point"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/circle_red"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="2dp"
+                        android:src="@drawable/ellipse"
+                        />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/map_pin"
+                        />
+                </LinearLayout>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/side_point_item"
+                    android:id="@+id/side_point_list"
+                    android:visibility="gone"
+                    android:divider="@null"
+                    />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <TextView
+                            android:id="@+id/pickup_text"
+                            android:fontFamily="@font/body_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/secondary_black"
+                            android:textSize="16dp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/pick_location"
+                            />
+
+                        <ImageView
+                            android:id="@+id/current_location_btn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/location"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:padding="7dp"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray_color"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+                <customer.gajamove.com.gajamove_customer.drag.dslv.DragSortListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stop_list"
+                    />
+                <customer.gajamove.com.gajamove_customer.drag.DynamicListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/destination_text"
+                        android:fontFamily="@font/body_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/secondary_black"
+                        android:textSize="16dp"
+                        android:gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="@string/drop_location"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/add_stop_lay"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/plus"
+                android:padding="2dp"
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/theme_primary"
+                android:textSize="14dp"
+                android:text="@string/add_stop"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:fontFamily="@font/body_two"
+            android:id="@+id/create_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/disabled_next_btn_drawable"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="5dp"
+            android:text="@string/next"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/pickup_lay"
+        android:visibility="gone"
+
+        android:background="@drawable/top_corner_rounded_rect"
+        >
+
+        <TextView
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black_color"
+            android:textSize="20dp"
+            android:text="Pickup Address Information"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_red"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+
+
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:textColor="@color/black_color"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:inputType="text"
+                android:text="Salak Satan"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:id="@+id/pickup_chosen_text"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:tint="@color/light_gray_color"
+
+
+                />
+            <EditText
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:textColor="@color/black_color"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="Floor and house number (optional)"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:id="@+id/pickup_home"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/smartphone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="+60"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black_color"
+                    />
+                <EditText
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:textColor="@color/black_color"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:hint="Phone number"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/pickup_contact"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:fontFamily="@font/body_two"
+            android:id="@+id/confirm_pickup_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/next_btn_drawable"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="5dp"
+            android:text="Confirm Pickup Information"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/destination_lay"
+        android:visibility="gone"
+
+        android:background="@drawable/top_corner_rounded_rect"
+        >
+
+        <TextView
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black_color"
+            android:textSize="20dp"
+            android:text="Drop Off Address Information"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/map_pin"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+
+
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:textColor="@color/black_color"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:inputType="text"
+                android:text="Salak Satan"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:id="@+id/drop_chosen_text"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:tint="@color/light_gray_color"
+
+
+                />
+            <EditText
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:textColor="@color/black_color"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="Floor and house number (optional)"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:id="@+id/drop_home"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/smartphone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="+60"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black_color"
+                    />
+                <EditText
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:textColor="@color/black_color"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:hint="Phone number"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/drop_contact"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:fontFamily="@font/body_two"
+            android:id="@+id/confirm_drop_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/next_btn_drawable"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="5dp"
+            android:text="Confirm Drop Off Information"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/calender_lay"
+        android:visibility="gone"
+
+        android:background="@drawable/top_corner_rounded_rect"
+        >
+
+
+        <customer.gajamove.com.gajamove_customer.calender.DriverCalenderView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/custome_calender_lay"
+            ></customer.gajamove.com.gajamove_customer.calender.DriverCalenderView>
+
+        <Button
+            android:fontFamily="@font/body_two"
+            android:id="@+id/confirm_date_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/next_btn_drawable"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="5dp"
+            android:text="Set Pickup Time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/stop_lay"
+        android:visibility="gone"
+
+        android:background="@drawable/top_corner_rounded_rect"
+        >
+
+        <TextView
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black_color"
+            android:textSize="20dp"
+            android:text="Stop Address Information"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle_red"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+
+
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:textColor="@color/black_color"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:inputType="text"
+                android:text="Salak Satan"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:id="@+id/stop_chosen_text"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/home"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:tint="@color/light_gray_color"
+
+
+                />
+            <EditText
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16dp"
+                android:textColor="@color/black_color"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="Floor and house number (optional)"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:id="@+id/stop_home"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/smartphone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="+60"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black_color"
+                    />
+
+                <EditText
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:textColor="@color/black_color"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:hint="Phone number"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/stop_contact"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:fontFamily="@font/body_two"
+            android:id="@+id/confirm_stop_btn"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/next_btn_drawable"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white_color"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="5dp"
+            android:text="Confirm Stop Information"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

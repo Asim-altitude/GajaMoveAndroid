@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_rect_filled"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/wallet"
+                    android:elevation="5dp"
+                    android:tint="@color/theme_primary"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:id="@+id/you_owe_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:gravity="center_horizontal"
+                    android:text="You owe (RM00)"
+                    android:visibility="gone"
+                    android:textColor="@color/theme_primary"
+                    android:textSize="20dp"
+                     />
+
+                <TextView
+                    android:fontFamily="@font/heading_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="RM00"
+                    android:textStyle="bold"
+                    android:textColor="@color/black_color"
+                    android:id="@+id/user_credit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="155dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:fontFamily="@font/body_one"
+                android:id="@+id/pay_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/next_btn_drawable"
+                android:text="@string/top_up"
+                android:visibility="visible"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/white_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/next_btn_drawable"
+                android:padding="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:id="@+id/refund_btn"
+                android:elevation="5dp"
+                >
+
+
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/withdraw"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white_color"
+                    android:layout_marginLeft="10dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance_expiry"
+                android:textColor="@color/theme_primary"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/credit_history_layout"
+            android:visibility="visible"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@color/background"
+                >
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Credit History"
+                    android:textColor="@color/dark_gray_color"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                     />
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rides"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black_color"
+                    />
+
+                <TextView
+                    android:fontFamily="@font/body_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pink Credit"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:textColor="@color/black_color"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit History"
+                android:textColor="@color/white_color"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:background="@color/black_color"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/refresh_history"
+                    >
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/credit_list"
+                        android:layout_margin="10dp"
+                        ></ListView>
+
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                >
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/loading_bar"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

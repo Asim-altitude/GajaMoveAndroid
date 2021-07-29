@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/white_rect_filled"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bank_icon"
+                android:tint="@color/theme_primary"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:textSize="18dp"
+                android:id="@+id/bank_name"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black_color"
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asim Shahzad"
+                android:textSize="14dp"
+                android:id="@+id/account_name"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                />
+            <TextView
+                android:fontFamily="@font/body_one"
+                android:id="@+id/account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="231331241241"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black_color"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cross"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="5dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

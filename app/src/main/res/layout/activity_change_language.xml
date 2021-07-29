@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="customer.gajamove.com.gajamove_customer.ChangeLanguage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <customer.gajamove.com.gajamove_customer.custom.CustomTextView
+            android:fontFamily="@font/heading_one"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:textColor="@color/black_color"
+            android:textSize="30dp"
+            android:text="@string/select_language"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeStepGranularity="2sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/english_lay"
+                >
+
+                <TextView
+                    android:fontFamily="@font/heading_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="English"
+                    android:textColor="@color/black_color"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/circle_bg_light"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background"
+                android:layout_marginTop="15dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/malay_lay"
+                android:layout_marginTop="15dp"
+                >
+
+                <TextView
+                    android:fontFamily="@font/heading_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Bahasa Melayu"
+                    android:textColor="@color/black_color"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/circle_bg_light"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:fontFamily="@font/body_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/next_btn_drawable"
+        android:text="@string/continue_btn"
+        android:textColor="@color/white_color"
+
+        />
+
+</RelativeLayout>

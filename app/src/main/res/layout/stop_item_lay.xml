@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/base_lay"
+    >
+
+ <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+     >
+
+    <TextView
+        android:id="@+id/stop_text"
+        android:fontFamily="@font/body_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/secondary_black"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:clickable="false"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray_color"
+        />
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cross"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

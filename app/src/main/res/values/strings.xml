@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">GajaMove</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome Back</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="didnt_have_account">Didn\'t have any account?</string>
+    <string name="sign_in_with">Or Sign In With</string>
+    <string name="create_account">Create An Account</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="terms_text">I have read, understood and accept the Terms and Conditions and Privacy Policy</string>
+    <string name="submit">Submit</string>
+    <string name="already_have_account">Already have an account?   </string>
+    <string name="active">Active</string>
+    <string name="schduled">Scheduled</string>
+    <string name="add_new">Add New Job</string>
+    <string name="empty_current_job">You have no current job available</string>
+    <string name="home">Home</string>
+    <string name="History">History</string>
+    <string name="Account">Account</string>
+    <string name="Logout">Logout</string>
+    <string name="where_to">When and Where to?</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="pick_location">Pickup Location</string>
+    <string name="drop_location">Drop Off Location</string>
+    <string name="add_stop">Add Stop</string>
+    <string name="next">Next</string>
+    <string name="floor_house">Floor and house number </string>
+    <string name="phone_number">Phone number </string>
+    <string name="confirm_pick_info">Confirm Pickup Information</string>
+    <string name="drop_address_info">Drop Off Address Information</string>
+    <string name="pick_address_info">Pick Up Address Information</string>
+    <string name="confirm_drop_info">Confirm Drop Off Information</string>
+    <string name="set_time">Set Pickup Time</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="total">Total</string>
+    <string name="ideal_for">Ideal for groceries, food small parcels starting at 2kg</string>
+    <string name="additional_service">Additional Services</string>
+    <string name="price_details">Pricing Details</string>
+    <string name="starting_p">Starting Price</string>
+    <string name="over_milage">Over Mileage</string>
+    <string name="place_order">Place Order</string>
+    <string name="review_order">Review Job</string>
+    <string name="finding_courier">Finding Driver</string>
+    <string name="courier_message">Gaja Move will pickup your courier soon</string>
+    <string name="cancel">Cancel</string>
+    <string name="notifications">Notifications</string>
+    <string name="terms_privacy_">Terms and Privacy Policy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="settings">Settings</string>
+    <string name="user_name">User Name</string>
+    <string name="phone_number_profile">Phone Number</string>
+    <string name="update">Update</string>
+    <string name="logout_prompt">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="back_to_signin">Back to Sign In</string>
+    <string name="new_pass">New Password</string>
+
+    <string name="c_pass">Confirm Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="change_pass">Change Password</string>
+    <string name="terms_privacy"> Terms and Privacy Policy</string>
+    <string name="thankyou">Thank You</string>
+    <string name="account_success_creation">Your account has been created successfully</string>
+    <string name="finance">Finance</string>
+    <string name="language">Language</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="top_up">Top Up</string>
+    <string name="withdraw">Request for Withdrawal</string>
+    <string name="search_location">Search for a location</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="verification">Verification</string>
+    <string name="code_message">Enter 4 Digit Number that was sent to your email.</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="verify">Verify</string>
+    <string name="order_history">Job History</string>
+
+
+    <string name="order_details">Job Details</string>
+    <string name="old_pass">Old Password</string>
+    <string name="my_driver">Favourite Drivers</string>
+    <string name="my_bank">Bank Account Info</string>
+    <string name="saved_rout">Addresses</string>
+    <string name="report_bug">Report a Bug</string>
+    <string name="user_agreement">User Agreement</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="standard_rate">Standard Rates</string>
+    <string name="e_receipt">Receive E Receipt</string>
+    <string name="industry">Industry</string>
+
+    <string name="no_bank">No bank added</string>
+    <string name="add_bank">Add Bank</string>
+    <string name="select_language">Select Language</string>
+    <string name="continue_btn">Continue</string>
+    <string name="when_where">When and Where to?</string>
+    <string name="balance_expiry">Your balance will automatically expire after 1 year from last top up</string>
+    <string name="s_language">Language</string>
+
+
+    <string name="legal">Legal</string>
+    <string name="agree">I agree to</string>
+    <string name="terms_conds">Terms and Conditions</string>
+    <string name="done">Done</string>
+    <string name="no_data">Sorry! no data found</string>
+
+    <string name="pickup_address">Pickup Address Information</string>
+    <string name="drop_off">Drop Off Address Information</string>
+    <string name="stop_address">Stop Address Information</string>
+    <string name="confirm_stop">Confirm Stop Information</string>
+    <string name="confirm_drop">Confirm Drop Off Information</string>
+    <string name="confirm_pick">Confirm Pickup Information</string>
+
+    <string name="total_km">Total KM</string>
+    <string name="base_price">Base Price</string>
+    <string name="payment_screen">Payment Screen</string>
+    <string name="google_login_warn">Seems you have registered using social media account. Please use our forgot password option to set your password</string>
+
+    <string name="profile">Profile</string>
+    <string name="cant_update_message">Cannot update profile while have orders</string>
+    <string name="view_details">View Details</string>
+
+
+    <string name="DIRECTION_API_KEY">AIzaSyCVq9PoFIgocv01ACZ5bcRugJ1KwIjMfXA</string>
+    <string name="FCM_PREF">com.getranked.teamguard.fcm_pref</string>
+    <string name="FCM_TOKEN">com.getranked.teamguard.fcm_token</string>
+
+    <string name="facebook_app_id" translatable="false">189045116408401</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb189045116408401</string>
+    <string name="note">*Currently we can offer services in Selangor only</string>
+    <string name="app_version">App Version</string>
+
+    <!-- <string name="facebook_app_id" translatable="false">258315059317320</string>
+     <string name="fb_login_protocol_scheme" translatable="false">fb258315059317320</string>-->
+
+
+</resources>

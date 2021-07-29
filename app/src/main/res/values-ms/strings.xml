@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GajaMove</string>
+    <string name="email"> E-mel </string>
+    <string name="password"> Kata Laluan </string>
+    <string name="welcome"> Sama-Sama</string>
+    <string name="forgot_pass"> Lupa Kata Laluan?</string>
+    <string name="sign_in"> Daftar Masuk</string>
+    <string name="sign_up"> Daftar</string>
+    <string name="didnt_have_account"> Belum Ada Akaun Daftar</string>
+    <string name="sign_in_with"> Daftar Masuk Dengan </string>
+    <string name="create_account"> Cipta Akaun</string>
+    <string name="name"> Nama</string>
+    <string name="phone"> Telefon </string>
+    <string name="terms_text"> Saya Sudah Baca Dan Faham Terma and Syarat Polisi</string>
+    <string name="submit"> Hantar </string>
+    <string name="already_have_account"> Sudah Ada Akaun </string>
+    <string name="active"> Aktif</string>
+    <string name="schduled"> Telah Dijadual</string>
+    <string name="add_new"> Tambah Pesanan Baru</string>
+    <string name="empty_current_job"> Anda Tiada Pesanan Buat Masa Sekarang </string>
+    <string name="home"> Kediaman</string>
+    <string name="History"> Sejarah</string>
+    <string name="Account"> Akaun </string>
+    <string name="Logout"> Log Keluar</string>
+    <string name="where_to"> Bila Dan Di Mana?</string>
+    <string name="choose_date"> Pilih Tarikh</string>
+    <string name="pick_location"> Pilih Lokasi</string>
+    <string name="drop_location"> Hantar Ke Mana </string>
+    <string name="add_stop"> Tambah Berhenti </string>
+    <string name="next"> Seterusnya</string>
+    <string name="floor_house"> Tingkat / Nombor Rumah (Pilihan)</string>
+    <string name="phone_number"> Nombor Telefon (Pilihan)</string>
+    <string name="confirm_pick_info"> Sahkan Maklumat Pengambilan</string>
+    <string name="drop_address_info"> Alamat Untuk Dihantar</string>
+    <string name="pick_address_info"> Alamat Untuk Pengambilan</string>
+    <string name="confirm_drop_info"> Sahkan Maklumat Tempat Penurunan</string>
+    <string name="set_time"> Set Masa</string>
+    <string name="select_vehicle"> Pilih Kenderaan</string>
+    <string name="total"> Jumlah </string>
+    <string name="ideal_for"> Sesuai Untuk Bahan Makanan, Bungkusan Makanan Kecil Bermula Dari 2kg </string>
+    <string name="additional_service"> Servis Pemuatan</string>
+    <string name="price_details"> Perincian Harga</string>
+    <string name="starting_p"> Titik Permulaan </string>
+    <string name="over_milage">Jarak Tempuh Lebih</string>
+    <string name="place_order"> Buat Pesanan</string>
+    <string name="review_order"> Ulasan Pesanan</string>
+    <string name="finding_courier"> Mencari Pemandu</string>
+    <string name="courier_message"> Gaja Move Akan Mengambil Order Anda</string>
+    <string name="cancel"> Batal</string>
+    <string name="notifications"> Notifikasies</string>
+    <string name="terms_privacy"> Terma Dan Dasar Privasi</string>
+    <string name="contact_us"> Hubungi Kami</string>
+    <string name="settings"> Tetapan</string>
+    <string name="user_name"> Nama Pengguna</string>
+    <string name="phone_number_profile"> Profil Nombor Telefon</string>
+    <string name="update"> kemas Kini</string>
+    <string name="logout_prompt"> Adakah Anda Pasti Mahu Keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="no"> Tidak</string>
+    <string name="back_to_signin"> Kembali Untuk Masuk</string>
+    <string name="new_pass"> Kata Laluan Baharu</string>
+    <string name="c_pass"> Sahkan Kata Laluan</string>
+    <string name="create_password"> Cipta Kata Laluan</string>
+    <string name="change_pass"> Tukar Kata Laluan </string>
+    <string name="thankyou"> Terima Kasih</string>
+    <string name="account_success_creation"> Akaun Anda Berjaya Dibuat</string>
+    <string name="finance"> Kewangan</string>
+    <string name="language"> Bahasa</string>
+    <string name="completed"> Selesai</string>
+    <string name="cancelled"> Batal</string>
+    <string name="top_up"> Tambah Nilai</string>
+    <string name="withdraw"> Permintaan Untuk Pengeluaran</string>
+    <string name="search_location"> Cari Lokasi</string>
+    <string name="choose_location"> Pilih Lokasi</string>
+    <string name="pay_now"> Bayar Sekarang</string>
+    <string name="verification"> Verifikasi</string>
+    <string name="code_message"> Masukkan Nombor 4 Digit Anda Yang Telah Dihantar Ke E-mel Anda.</string>
+    <string name="resend_code"> Hantar Semula Kod</string>
+    <string name="verify"> Pengesahan</string>
+    <string name="order_history"> Sejarah pesanan </string>
+
+    <string name="my_bank">Akaun Bank</string>
+    <string name="no_bank">No bank added</string>
+    <string name="add_bank">Add Bank</string>
+
+
+    <string name="my_driver">Pemandu Kegemaran</string>
+    <string name="e_receipt">Terima e Resit</string>
+    <string name="report_bug">Laporkan Pepijat</string>
+    <string name="legal">Undang- Undang</string>
+    <string name="user_agreement">Perjanjian Pengguna</string>
+    <string name="when_where">Bila Dan Di Mana</string>
+    <string name="balance_expiry">Baki anda akan habis secara automatic setelah 1 tahun dari penambahan terakhir</string>
+    <string name="privacy">dasar privasi</string>
+    <string name="done">SELESAI</string>
+    <string name="s_language">Bahasa</string>
+    <string name="continue_btn">Teruskan</string>
+    <string name="no_data">Maaf! Tiada Data Ditemui</string>
+    <string name="select_language">Pilihan Bahasa</string>
+
+    <string name="standard_rate">kadar standard</string>
+    <string name="industry">Industri</string>
+    <string name="saved_rout">Alamat</string>
+    <string name="old_pass">Kata laluan lama</string>
+    <string name="order_details">Maklumat Pekerjaan</string>
+    <string name="terms_privacy_">Syarat dan Dasar Privasi</string>
+
+    <string name="pickup_address">Maklumat Alamat Pengambilann</string>
+    <string name="drop_off">Maklumat Alamat Lepas</string>
+    <string name="stop_address">Maklumat Alamat Berhenti</string>
+    <string name="confirm_stop">Sahkan Maklumat Berhenti</string>
+    <string name="confirm_drop">Sahkan Maklumat Penurunan</string>
+    <string name="confirm_pick">Sahkan Maklumat Pengambilan</string>
+    <string name="google_login_warn">Nampaknya anda telah mendaftar menggunakan akaun media sosial. Sila gunakan pilihan kata laluan terlupa kami untuk menetapkan kata laluan anda</string>
+
+    <string name="note">*Buat masa ini kami boleh menawarkan perkhidmatan di Selangor sahaja</string>
+
+    <string name="total_km">Jumlah KM</string>
+    <string name="base_price">Harga Asas</string>
+    <string name="payment_screen">Skrin Pembayaran</string>
+
+    <string name="profile">Profil</string>
+    <string name="cant_update_message">Tidak dapat mengemas kini profil semasa mempunyai pesanan</string>
+    <string name="view_details">Lihat butiran</string>
+
+    <string name="DIRECTION_API_KEY">AIzaSyCVq9PoFIgocv01ACZ5bcRugJ1KwIjMfXA</string>
+    <string name="FCM_PREF">com.getranked.teamguard.fcm_pref</string>
+    <string name="FCM_TOKEN">com.getranked.teamguard.fcm_token</string>
+
+    <string name="agree">Saya bersetuju dengan </string>
+    <string name="terms_conds">Terms dan Syarat</string>
+
+
+</resources>

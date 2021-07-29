@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/heading_one"
+        android:textSize="16dp"
+        android:text="Save My Location"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/grey_rect_empty"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:fontFamily="@font/body_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16dp"
+            android:textColor="@color/black_color"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="Choose Location Title"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:id="@+id/location_name"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:fontFamily="@font/body_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/dark_gray_color"
+        android:textStyle="normal"
+        android:maxLines="1"
+        android:inputType="text"
+        android:hint=""
+        android:background="@null"
+        android:text="Location Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:fontFamily="@font/body_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/black_color"
+        android:hint=""
+        android:text=""
+        android:id="@+id/full_location_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/save_location_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/next_btn_drawable"
+        android:text="Save"
+        android:textColor="@color/white_color"
+        android:textSize="14dp"
+        android:fontFamily="@font/body_one"
+        />
+
+</LinearLayout>
